@@ -9,10 +9,12 @@ while tentativas < max_tentativas:
 
     if usuario == usuario_correto and senha == senha_correta:
         print("Login feito com sucesso!")
-        break
+
+    elif tentativas == max_tentativas:
+        print("Conta suspensa")
+
     else:
         tentativas += 1
         print("Usuário ou senha incorretos!")
 
-    if tentativas == max_tentativas:
-        print("Conta suspensa")
+        
